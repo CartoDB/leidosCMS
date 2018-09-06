@@ -17,325 +17,386 @@ table, th, td {
 <p>This map shows the number of people per hospital facility across every state in the US. The color spectrum from light to dark reflects the increasing number of people per medical facility.</p>
 <br><iframe width="100%" height="520" frameborder="0" src="https://csteam.carto.com/u/bterrett-cs/builder/67ab39a2-791d-4020-8c61-bfbccb8ed03d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen title="CARTO map showing population density per hospital in the United States" aria-label="This map shows the number of people per hospital facility across every state in the US. The color spectrum from light to dark reflects the increasing number of people per medical facility."></iframe>
 
-<br><br>
+<br>
+<p>The styling on this map reflects a gradient of colors from light to dark purple, reflecting increasing population per hospital. The data distribution quintiles are defined below:
+<br>Light purple: The lowest quintile of data (0-20%)
+<br>Medium-light purple: The 2nd quintile of data (20-40%)
+<br>Medium purple: The 3rd quintile of data (40-60%)
+<br>Medium-dark purple: The 4th quintil of data (60-80%)
+<br>Dark purple: The 5th and highest quintile of data (80-100%)</p>
+<br>
 <!-- <table class="table table-bordered table-hover table-condensed"> -->
 <table>
-<thead><tr><th title="Field #1">State</th>
-<th title="Field #2"># of hospitals</th>
-<th title="Field #3">2015 Population</th>
-<th title="Field #4">Population per hospital</th>
-</tr></thead>
-<tbody><tr>
-<td>Alabama</td>
-<td>129</td>
-<td >4877327.62</td>
-<td >37808.74124</td>
-</tr>
-<tr>
-<td>Alaska</td>
-<td >24</td>
-<td >726618.0274</td>
-<td >30275.75114</td>
-</tr>
-<tr>
-<td>Arizona</td>
-<td >143</td>
-<td  >6825993.269</td>
-<td  >47734.21866</td>
-</tr>
-<tr>
-<td>Arkansas</td>
-<td  >122</td>
-<td  >2986472.226</td>
-<td  >24479.28054</td>
-</tr>
-<tr>
-<td>California</td>
-<td  >561</td>
-<td  >39014577.7</td>
-<td  >69544.70179</td>
-</tr>
-<tr>
-<td>Colorado</td>
-<td  >119</td>
-<td  >5460279.679</td>
-<td  >45884.70318</td>
-</tr>
-<tr>
-<td>Connecticut</td>
-<td  >40</td>
-<td  >3522994.034</td>
-<td  >88074.85085</td>
-</tr>
-<tr>
-<td>Delaware</td>
-<td  >15</td>
-<td  >946158.4699</td>
-<td  >63077.23133</td>
-</tr>
-<tr>
-<td>District of Columbia</td>
-<td  >12</td>
-<td  >530654.1469</td>
-<td  >44221.17891</td>
-</tr>
-<tr>
-<td>Florida</td>
-<td  >325</td>
-<td  >19921131.97</td>
-<td  >61295.79069</td>
-</tr>
-<tr>
-<td>Georgia</td>
-<td  >232</td>
-<td  >10213116.88</td>
-<td  >44022.05551</td>
-</tr>
-<tr>
-<td>Hawaii</td>
-<td  >29</td>
-<td  >1348045.136</td>
-<td  >46484.31503</td>
-</tr>
-<tr>
-<td>Idaho</td>
-<td  >54</td>
-<td  >1648672.699</td>
-<td  >30530.97591</td>
-</tr>
-<tr>
-<td>Illinois</td>
-<td  >231</td>
-<td  >12822504.55</td>
-<td  >55508.67771</td>
-</tr>
-<tr>
-<td>Indiana</td>
-<td  >184</td>
-<td  >6623936.911</td>
-<td  >35999.65712</td>
-</tr>
-<tr>
-<td>Iowa</td>
-<td  >143</td>
-<td  >3111394.105</td>
-<td  >21758.00074</td>
-</tr>
-<tr>
-<td>Kansas</td>
-<td  >165</td>
-<td  >2898386.024</td>
-<td  >17565.9759</td>
-</tr>
-<tr>
-<td>Kentucky</td>
-<td  >129</td>
-<td  >4429469.464</td>
-<td  >34336.97259</td>
-</tr>
-<tr>
-<td>Louisiana</td>
-<td  >259</td>
-<td  >4607774.414</td>
-<td  >17790.6348</td>
-</tr>
-<tr>
-<td>Maine</td>
-<td  >50</td>
-<td  >1303462.496</td>
-<td  >26069.24992</td>
-</tr>
-<tr>
-<td>Maryland</td>
-<td  >72</td>
-<td  >5729631.957</td>
-<td  >79578.22163</td>
-</tr>
-<tr>
-<td>Massachusetts</td>
-<td  >135</td>
-<td  >6681458.641</td>
-<td  >49492.28623</td>
-</tr>
-<tr>
-<td>Michigan</td>
-<td  >177</td>
-<td  >9801967.451</td>
-<td  >55378.34718</td>
-</tr>
-<tr>
-<td>Minnesota</td>
-<td  >140</td>
-<td  >5473524.85</td>
-<td  >39096.60607</td>
-</tr>
-<tr>
-<td>Mississippi</td>
-<td  >127</td>
-<td  >3011735.067</td>
-<td  >23714.44934</td>
-</tr>
-<tr>
-<td>Missouri</td>
-<td  >181</td>
-<td  >6112631.673</td>
-<td  >33771.44571</td>
-</tr>
-<tr>
-<td>Montana</td>
-<td  >68</td>
-<td  >1033905.301</td>
-<td  >15204.48972</td>
-</tr>
-<tr>
-<td>Nebraska</td>
-<td  >111</td>
-<td  >1898262.049</td>
-<td  >17101.4599</td>
-</tr>
-<tr>
-<td>Nevada</td>
-<td  >71</td>
-<td  >2916017.582</td>
-<td  >41070.67017</td>
-</tr>
-<tr>
-<td>New Hampshire</td>
-<td  >35</td>
-<td  >1332149.621</td>
-<td  >38061.41776</td>
-</tr>
-<tr>
-<td>New Jersey</td>
-<td  >138</td>
-<td  >8757079.256</td>
-<td  >63457.09606</td>
-</tr>
-<tr>
-<td>New Mexico</td>
-<td  >69</td>
-<td  >2091353.618</td>
-<td  >30309.47272</td>
-</tr>
-<tr>
-<td>New York</td>
-<td  >232</td>
-<td  >19711600.3</td>
-<td  >84963.79439</td>
-</tr>
-<tr>
-<td>North Carolina</td>
-<td  >146</td>
-<td  >10009212.5</td>
-<td  >68556.25003</td>
-</tr>
-<tr>
-<td>North Dakota</td>
-<td  >55</td>
-<td  >755396.8254</td>
-<td  >13734.48773</td>
-</tr>
-<tr>
-<td>Ohio</td>
-<td  >280</td>
-<td  >11576212.95</td>
-<td  >41343.61767</td>
-</tr>
-<tr>
-<td>Oklahoma</td>
-<td  >162</td>
-<td  >3904238.65</td>
-<td  >24100.23858</td>
-</tr>
-<tr>
-<td>Oregon</td>
-<td  >73</td>
-<td  >4047969.9</td>
-<td  >55451.64247</td>
-</tr>
-<tr>
-<td>Pennsylvania</td>
-<td  >276</td>
-<td  >12823491.48</td>
-<td  >46461.92564</td>
-</tr>
-<tr>
-<td>Rhode Island</td>
-<td  >20</td>
-<td  >951843.2786</td>
-<td  >47592.16393</td>
-</tr>
-<tr>
-<td>South Carolina</td>
-<td  >108</td>
-<td  >4869965.924</td>
-<td  >45092.27707</td>
-</tr>
-<tr>
-<td>South Dakota</td>
-<td >75</td>
-<td >854056.2294</td>
-<td >11387.41639</td>
-</tr>
-<tr>
-<td>Tennessee</td>
-<td >179</td>
-<td >6577856.34</td>
-<td >36747.80078</td>
-</tr>
-<tr>
-<td>Texas</td>
-<td >781</td>
-<td >27360289.7</td>
-<td >35032.38118</td>
-</tr>
-<tr>
-<td>Utah</td>
-<td >68</td>
-<td >2994125.23</td>
-<td >44031.25338</td>
-</tr>
-<tr>
-<td>Vermont</td>
-<td >17</td>
-<td >621131.6454</td>
-<td >36537.15561</td>
-</tr>
-<tr>
-<td>Virginia</td>
-<td >142</td>
-<td >8273961.002</td>
-<td >58267.331</td>
-</tr>
-<tr>
-<td>Washington</td>
-<td >130</td>
-<td >7073274.548</td>
-<td >54409.80422</td>
-</tr>
-<tr>
-<td>West Virginia</td>
-<td >70</td>
-<td >1902353.592</td>
-<td >27176.47989</td>
-</tr>
-<tr>
-<td>Wisconsin</td>
-<td >161</td>
-<td >5753074.184</td>
-<td >35733.38003</td>
-</tr>
-<tr>
-<td>Wyoming</td>
-<td >37</td>
-<td >594534.3442</td>
-<td >16068.49579</td>
-</tr>
-</tbody><tfoot><tr><th>&nbsp;</th><th  >7302</th>
-<th >319313275.5102</th>
-<th >2111386.82183</th>
-</tr></tfoot>
-</table>
+  <thead><tr><th title="Field #1">State</th>
+  <th title="Field #2"># of hospitals</th>
+  <th title="Field #3">2015 Population</th>
+  <th title="Field #4">Population per hospital</th>
+  <th title="Field #5">Quintile</th>
+  </tr></thead>
+  <tbody><tr>
+  <td>Alabama</td>
+  <td align="right">129</td>
+  <td align="right">4877327.6</td>
+  <td align="right">37808.7</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Alaska</td>
+  <td align="right">24</td>
+  <td align="right">726618.0</td>
+  <td align="right">30275.8</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Arizona</td>
+  <td align="right">143</td>
+  <td align="right">6825993.3</td>
+  <td align="right">47734.2</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>Arkansas</td>
+  <td align="right">122</td>
+  <td align="right">2986472.2</td>
+  <td align="right">24479.3</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>California</td>
+  <td align="right">561</td>
+  <td align="right">39014577.7</td>
+  <td align="right">69544.7</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>Colorado</td>
+  <td align="right">119</td>
+  <td align="right">5460279.7</td>
+  <td align="right">45884.7</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>Connecticut</td>
+  <td align="right">40</td>
+  <td align="right">3522994.0</td>
+  <td align="right">88074.9</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>Delaware</td>
+  <td align="right">15</td>
+  <td align="right">946158.5</td>
+  <td align="right">63077.2</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>District of Columbia</td>
+  <td align="right">12</td>
+  <td align="right">530654.1</td>
+  <td align="right">44221.2</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Florida</td>
+  <td align="right">325</td>
+  <td align="right">19921132.0</td>
+  <td align="right">61295.8</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>Georgia</td>
+  <td align="right">232</td>
+  <td align="right">10213116.9</td>
+  <td align="right">44022.1</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Hawaii</td>
+  <td align="right">29</td>
+  <td align="right">1348045.1</td>
+  <td align="right">46484.3</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>Idaho</td>
+  <td align="right">54</td>
+  <td align="right">1648672.7</td>
+  <td align="right">30531.0</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Illinois</td>
+  <td align="right">231</td>
+  <td align="right">12822504.6</td>
+  <td align="right">55508.7</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>Indiana</td>
+  <td align="right">184</td>
+  <td align="right">6623936.9</td>
+  <td align="right">35999.7</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Iowa</td>
+  <td align="right">143</td>
+  <td align="right">3111394.1</td>
+  <td align="right">21758.0</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Kansas</td>
+  <td align="right">165</td>
+  <td align="right">2898386.0</td>
+  <td align="right">17566.0</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Kentucky</td>
+  <td align="right">129</td>
+  <td align="right">4429469.5</td>
+  <td align="right">34337.0</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Louisiana</td>
+  <td align="right">259</td>
+  <td align="right">4607774.4</td>
+  <td align="right">17790.6</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Maine</td>
+  <td align="right">50</td>
+  <td align="right">1303462.5</td>
+  <td align="right">26069.2</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Maryland</td>
+  <td align="right">72</td>
+  <td align="right">5729632.0</td>
+  <td align="right">79578.2</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>Massachusetts</td>
+  <td align="right">135</td>
+  <td align="right">6681458.6</td>
+  <td align="right">49492.3</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>Michigan</td>
+  <td align="right">177</td>
+  <td align="right">9801967.5</td>
+  <td align="right">55378.3</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>Minnesota</td>
+  <td align="right">140</td>
+  <td align="right">5473524.8</td>
+  <td align="right">39096.6</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Mississippi</td>
+  <td align="right">127</td>
+  <td align="right">3011735.1</td>
+  <td align="right">23714.4</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Missouri</td>
+  <td align="right">181</td>
+  <td align="right">6112631.7</td>
+  <td align="right">33771.4</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Montana</td>
+  <td align="right">68</td>
+  <td align="right">1033905.3</td>
+  <td align="right">15204.5</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Nebraska</td>
+  <td align="right">111</td>
+  <td align="right">1898262.0</td>
+  <td align="right">17101.5</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Nevada</td>
+  <td align="right">71</td>
+  <td align="right">2916017.6</td>
+  <td align="right">41070.7</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>New Hampshire</td>
+  <td align="right">35</td>
+  <td align="right">1332149.6</td>
+  <td align="right">38061.4</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>New Jersey</td>
+  <td align="right">138</td>
+  <td align="right">8757079.3</td>
+  <td align="right">63457.1</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>New Mexico</td>
+  <td align="right">69</td>
+  <td align="right">2091353.6</td>
+  <td align="right">30309.5</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>New York</td>
+  <td align="right">232</td>
+  <td align="right">19711600.3</td>
+  <td align="right">84963.8</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>North Carolina</td>
+  <td align="right">146</td>
+  <td align="right">10009212.5</td>
+  <td align="right">68556.3</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>North Dakota</td>
+  <td align="right">55</td>
+  <td align="right">755396.8</td>
+  <td align="right">13734.5</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Ohio</td>
+  <td align="right">280</td>
+  <td align="right">11576212.9</td>
+  <td align="right">41343.6</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Oklahoma</td>
+  <td align="right">162</td>
+  <td align="right">3904238.6</td>
+  <td align="right">24100.2</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Oregon</td>
+  <td align="right">73</td>
+  <td align="right">4047969.9</td>
+  <td align="right">55451.6</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>Pennsylvania</td>
+  <td align="right">276</td>
+  <td align="right">12823491.5</td>
+  <td align="right">46461.9</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>Rhode Island</td>
+  <td align="right">20</td>
+  <td align="right">951843.3</td>
+  <td align="right">47592.2</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>South Carolina</td>
+  <td align="right">108</td>
+  <td align="right">4869965.9</td>
+  <td align="right">45092.3</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>South Dakota</td>
+  <td align="right">75</td>
+  <td align="right">854056.2</td>
+  <td align="right">11387.4</td>
+  <td align="right">1</td>
+  </tr>
+  <tr>
+  <td>Tennessee</td>
+  <td align="right">179</td>
+  <td align="right">6577856.3</td>
+  <td align="right">36747.8</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Texas</td>
+  <td align="right">781</td>
+  <td align="right">27360289.7</td>
+  <td align="right">35032.4</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Utah</td>
+  <td align="right">68</td>
+  <td align="right">2994125.2</td>
+  <td align="right">44031.3</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Vermont</td>
+  <td align="right">17</td>
+  <td align="right">621131.6</td>
+  <td align="right">36537.2</td>
+  <td align="right">3</td>
+  </tr>
+  <tr>
+  <td>Virginia</td>
+  <td align="right">142</td>
+  <td align="right">8273961.0</td>
+  <td align="right">58267.3</td>
+  <td align="right">5</td>
+  </tr>
+  <tr>
+  <td>Washington</td>
+  <td align="right">130</td>
+  <td align="right">7073274.5</td>
+  <td align="right">54409.8</td>
+  <td align="right">4</td>
+  </tr>
+  <tr>
+  <td>West Virginia</td>
+  <td align="right">70</td>
+  <td align="right">1902353.6</td>
+  <td align="right">27176.5</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Wisconsin</td>
+  <td align="right">161</td>
+  <td align="right">5753074.2</td>
+  <td align="right">35733.4</td>
+  <td align="right">2</td>
+  </tr>
+  <tr>
+  <td>Wyoming</td>
+  <td align="right">37</td>
+  <td align="right">594534.3</td>
+  <td align="right">16068.5</td>
+  <td align="right">1</td>
+  </tr>
+</tbody><tfoot><tr><th>Totals</th> 
+  <th align="right">7302</th>
+  <th align="right">319313275.2</th>
+  <th align="right">2111387</th>
+  <th align="right"></th>
+  </tr></tfoot>
+  </table>
 
 <!-- <br><br>
 example of an accessible table:<br>
